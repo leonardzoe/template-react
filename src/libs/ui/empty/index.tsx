@@ -1,6 +1,6 @@
 import { cn } from "@/libs/tailwind-variants"
 import React from "react"
-import { HiArchiveBox } from "react-icons/hi2"
+import { LuArchive } from "react-icons/lu"
 
 export const Empty = React.forwardRef<
   HTMLDivElement,
@@ -15,7 +15,7 @@ export const Empty = React.forwardRef<
       )}
       {...props}
     >
-      <HiArchiveBox className="text-5xl" />
+      <LuArchive className="text-5xl" />
       <p className="text-center font-medium">
         {children || "No results found"}
       </p>

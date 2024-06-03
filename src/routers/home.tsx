@@ -1,7 +1,7 @@
 import { Button } from "@/libs/ui/button"
 import { Container } from "@/libs/ui/container"
 import { useTheme } from "next-themes"
-import { HiMoon, HiSun } from "react-icons/hi2"
+import { LuMoon, LuSun } from "react-icons/lu"
 
 export default function Home() {
   const { theme, setTheme } = useTheme()
@@ -14,7 +14,7 @@ export default function Home() {
         onClick={function () {
           setTheme(theme === "dark" ? "light" : "dark")
         }}
-        startContent={theme === "dark" ? <HiMoon /> : <HiSun />}
+        startContent={theme === "dark" ? <LuMoon /> : <LuSun />}
       >
         Button
       </Button>
